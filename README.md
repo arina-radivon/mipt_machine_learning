@@ -1,0 +1,2 @@
+This course in python starts swith the basics of python and not requires special experience.
+You can read the lecture material in the Lectures folder and do or watch the realizations of practical tasks in the Tasks folder. The practice number matches to the lecture number.
