@@ -35,3 +35,26 @@ ValueError: empty string is not allowed
 
 если переданы и номер строки, и текст, метод выдает: "cannot parse text on line ...: '...'"
 
+Пример работы программы:
+```python
+
+>>> raise ParseError('some standard message')
+Traceback (most recent call last):
+  ...
+__main__.ParseError: some standard message
+ 
+>>> raise ParseError(line_no=10)
+Traceback (most recent call last):
+  ...
+__main__.ParseError: cannot parse text on line 10
+ 
+>>> raise ParseError(text='abc')
+Traceback (most recent call last):
+__main__.ParseError: cannot parse text: 'abc'
+ 
+>>> raise ParseError(line_no=10, text='...')
+Traceback (most recent call last):
+  ...
+__main__.ParseError: cannot parse text on line 10: ...
+```
+
